@@ -20,7 +20,8 @@ See the ```requirement.txt``` to install the dependent packages and librairies.
  + Clone the github repository
    
    ```python 
-   git clone https://github.com/Chilie/HDC2021_code.git
+   git clone https://github.com/Wang-weixi/HDC2021.git
+
    cd HDC2021_code
    ```
  + Use ```conda```  constrcut the virtual environment
