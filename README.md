@@ -1,7 +1,7 @@
 # Code for Helsinki Deblur Challenge 2021
 ## Authors, institution, location.
 Below is the information for the authors.
- + *Author*       Ji Li
+ + *Author*       Weixi
  + *Institution*  Department of Mathematics, National University of Singapore
  + *Location*.    21 Lower Kent Ridge Rd, Singapore 119077    
 ## Brief description of your algorithm and a mention of the competition.
@@ -19,7 +19,7 @@ See the ```requirement.txt``` to install the dependent packages and librairies.
  ## Usage instructions.
  + Clone the github repository
    
-   ```python
+   ```python 
    git clone https://github.com/Chilie/HDC2021_code.git
    cd HDC2021_code
    ```
