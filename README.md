@@ -1,7 +1,7 @@
 # Code for Helsinki Deblur Challenge 2021
 ## Authors, institution, location.
 Below is the information for the authors.
- + *Author*       Weixi
+ + *Author*       Weixi Wang
  + *Institution*  Department of Mathematics, National University of Singapore
  + *Location*.    21 Lower Kent Ridge Rd, Singapore 119077    
 ## Brief description of your algorithm and a mention of the competition.
