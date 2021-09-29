@@ -1,6 +1,5 @@
 from .skip import skip
 from .multi_skip import multi_skip
-from .texture_nets import get_texture_nets
 from .resnet import ResNet
 from .unet import UNet
 
@@ -22,8 +21,6 @@ def get_net(input_depth, NET_TYPE, pad, upsample_mode, n_channels=3, act_fun='Le
                                             num_channels_skip = [skip_n11]*num_scales if isinstance(skip_n11, int) else skip_n11, 
                                             upsample_mode=upsample_mode, downsample_mode=downsample_mode,
                                             need_sigmoid=True, need_bias=True, pad=pad, act_fun=act_fun)
-    elif NET_TYPE == 'texture_nets':
-        net = get_texture_nets(inp=input_depth, ratios = [32, 16, 8, 4, 2, 1], fill_noise=False,pad=pad)
 
     elif NET_TYPE =='UNet':
         net = UNet(num_input_channels=input_depth, num_output_channels=3, 
