@@ -10,7 +10,7 @@ from models import DLSS
 from utils.denoising_utils import *
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('--input_path', type=str, default='example/deblur_tif', help='the input blurred image path')
+parser.add_argument('--input_path', type=str, default='example/blur_tif/', help='the input blurred image path')
 parser.add_argument('--output_path', type=str, default='result/', help='output path of the deblurred images')
 opt = parser.parse_args()
 
@@ -36,8 +36,8 @@ net2 = torch.nn.DataParallel(net2)
 Img_list=sorted(os.listdir(opt.input_path))
  
 
-for k in range(Img_list):
-    file_name=opt.input_path+k
+for img_name in Img_list:
+    file_name=opt.input_path+img_name
     img = np.array(cv2.imread(file_name, -1), dtype=np.float32)/255.
     img=cv2.resize(img, dsize=(1180, 730), interpolation=cv2.INTER_CUBIC)
     img=1-img/255.
@@ -54,7 +54,7 @@ for k in range(Img_list):
     Img_tensor =  torch.FloatTensor(Img).cuda()
     with torch.no_grad():
         out=1-net2(net(Img_tensor)).data
-    path=opt.output_path+k[:-4]+'.png'
+    path=opt.output_path+img_name[:-4]+'.png'
     out_img=torch.clamp(out.squeeze().cpu(),0.,1.)
     out_img=out_img.detach().numpy()
     print(out_img.shape)
