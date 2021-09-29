@@ -35,11 +35,15 @@ See the ```requirement.txt``` to install the dependent packages and librairies.
 
  ## Show a few examples.
 Below we show two exmaples of our deblurring performance
- + Input image is `step14/Times/CAM02/focusStep_14_timesR_size_30_sample_0100.tif`, the input and deblurred image is
-    ![Example 1](./example/focusStep_14_timesR_size_30_sample_0100.png)
+ + Input image is `step14/Times/CAM02/focusStep_14_timesR_size_30_sample_0100.tif`, the input is:
+    ![Example 1](./example/blur/focusStep_14_timesR_size_30_sample_0100.png)
+    and deblurred image is
+    ![Example 1](./result/focusStep_14_timesR_size_30_sample_0100.png)
 
- + Input image is `step19/Verdana/CAM02/focusStep_19_verdanaRef_size_30_sample_0100.tif`
-    ![Example 2](./example/focusStep_15_verdanaRef_size_30_sample_0100.png)
+ + Input image is `step19/Verdana/CAM02/focusStep_19_verdanaRef_size_30_sample_0100.tif`, the input is:
+    ![Example 1](./example/blur/focusStep_15_verdanaRef_size_30_sample_0100.png)
+    and deblurred image is
+    ![Example 1](./result/focusStep_15_verdanaRef_size_30_sample_0100.png)
 
 
 ** Usage instructions.
