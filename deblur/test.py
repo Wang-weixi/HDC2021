@@ -39,7 +39,7 @@ Img_list=sorted(os.listdir(opt.input_path))
 for img_name in Img_list:
     file_name=opt.input_path+img_name
     img = np.array(cv2.imread(file_name, -1), dtype=np.float32)/255.
-    img=cv2.resize(img, dsize=(1180, 730), interpolation=cv2.INTER_CUBIC)
+    #img=cv2.resize(img, dsize=(1180, 730), interpolation=cv2.INTER_CUBIC)
     img=1-img/255.
     if img.ndim == 2:
         Img = np.expand_dims(img, axis=0)
@@ -53,7 +53,7 @@ for img_name in Img_list:
 
     Img_tensor =  torch.FloatTensor(Img).cuda()
     with torch.no_grad():
-        out=1-net2(net(Img_tensor)).data
+        out=1-Img_tensor.data
     path=opt.output_path+img_name[:-4]+'.png'
     out_img=torch.clamp(out.squeeze().cpu(),0.,1.)
     out_img=out_img.detach().numpy()
