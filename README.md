@@ -40,7 +40,7 @@ Below we show two exmaples of our deblurring performance
     and deblurred image is
     ![Example 1](./result/focusStep_14_timesR_size_30_sample_0100.png)
 
- + Input image is `step19/Verdana/CAM02/focusStep_19_verdanaRef_size_30_sample_0100.tif`, the input is:
+ + Input image is `step15/Verdana/CAM02/focusStep_15_verdanaRef_size_30_sample_0100.tif`, the input is:
     ![Example 1](./example/blur/focusStep_15_verdanaRef_size_30_sample_0100.png)
     and deblurred image is
     ![Example 1](./result/focusStep_15_verdanaRef_size_30_sample_0100.png)
