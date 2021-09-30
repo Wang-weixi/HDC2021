@@ -27,7 +27,7 @@ def main():
                     num_scales=5,
                     n_channels=1, 
                     upsample_mode='bilinear').type(dtype)
-    net.load_state_dict(torch.load('net_down_final.pth'))
+    net.load_state_dict(torch.load('net_down.pth'))
     net = torch.nn.DataParallel(net)
     net2=DLSS.DLSS(1)
     net2.load_state_dict(torch.load('net_up.pth'))
