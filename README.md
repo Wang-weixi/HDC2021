@@ -27,8 +27,8 @@ See the ```requirement.txt``` to install the dependent packages and librairies.
  + Use ```conda```  constrcut the virtual environment
     ```python
     pip3 install virtualenv
-    virtualenv --no-site-packages --python=python3 hdc2021
-    source hdc2021/bin/activate # enter the vironment
+    virtualenv --no-site-packages --python=python3 HDC2021
+    source HDC2021/bin/activate # enter the vironment
     pip3 install -r requirements.txt # install the dependency 
     deactivate
     ```
