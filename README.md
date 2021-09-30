@@ -28,7 +28,7 @@ See the ```requirements.txt``` to install the dependent packages and librairies.
     ```python
     pip3 install virtualenv
     virtualenv --no-site-packages --python=python3 HDC2021
-    source HDC2021/bin/activate # enter the vironment
+    source HDC2021/bin/activate # enter the environment
     pip3 install -r requirements.txt # install the dependency 
     deactivate
     ```
