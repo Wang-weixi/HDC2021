@@ -14,7 +14,7 @@ Below is the information for the authors.
 ** Installation instructions, including any requirements.
 See the +requirement.txt+ to install the dependent packages and librairies.
  ## Installation instructions, including any requirements.
-See the ```requirement.txt``` to install the dependent packages and librairies.
+See the ```requirements.txt``` to install the dependent packages and librairies.
 
  ## Usage instructions.
  + Clone the github repository
